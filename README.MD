@@ -13,7 +13,7 @@
 1. Руководство по установке IntelliJ IDEA
 2. Код от предыдущего программиста
 
- public class Main {
+public class Main {
   public static void main(String[] args) {
     // TODO: подставлять номер карты нужно сюда между двойными кавычками, без пробелов
     String number = "5351719427810741";
