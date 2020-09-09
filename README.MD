@@ -35,7 +35,7 @@
  * Программа считает валидными номера карт с длинной 16 цифр. Сообщение "Result is OK"
  * Номера карт с длинной 14, 15, 19 цифр программа считает невалидными. Сообщение "Result is FAIL"
 
-[Ссылка](https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1)
+Ссылка [https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1](https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1)
 
 
 **Тестирование производилось в следующем окружении:**
