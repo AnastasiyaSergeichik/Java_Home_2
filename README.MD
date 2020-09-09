@@ -14,7 +14,10 @@
 2. Код от предыдущего программиста по [ссылке](https://github.com/netology-code/javaqa-homeworks/tree/master/intro)
 
 **В результате тестирования выявлены следующие дефекты:**
- * Программа считает валидными только 16-ти значные номера банковских карт.
+ * Программа считает валидными только 16-ти значные номера банковских карт. Сообщение "Result is OK"
+ * Номера карт с длинной 14, 15, 19 цифр программа считает невалидными. Сообщение "Result is FAIL"
+
+Ссылка [https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1](https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1)
 
 ## Описание процесса тестирования
 1. Установить IntelliJ IDEA согласно [Руководство по установке IntelliJ IDEA](https://github.com/netology-code/javaqa-homeworks/blob/master/intro/idea.md)
@@ -26,16 +29,10 @@
 
 **В качестве тестовых данных использовались данные с сервиса [freeformatter.com](https://www.freeformatter.com/credit-card-number-generator-validator.html)**
 Сервис генерирует валидные номера карт.
+ 
+Список валидных тестовых данных (вывод сообщения "Result is OK")
+ ![список](http://joxi.ru/vAWvvvvTqpJlB2)
 
-## Ожидаемый результат:
- * Тестовые данные валидные
- * Сообщение "Result is OK"
-
-## Фактический результат:
- * Программа считает валидными номера карт с длинной 16 цифр. Сообщение "Result is OK"
- * Номера карт с длинной 14, 15, 19 цифр программа считает невалидными. Сообщение "Result is FAIL"
-
-Ссылка [https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1](https://github.com/AnastasiyaSergeichik/Java_Home_2/issues/1)
 
 
 **Тестирование производилось в следующем окружении:**
