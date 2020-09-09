@@ -11,48 +11,10 @@
 
 **В процессе тестирования использовались следующие артефакты:**
 1. Руководство по установке IntelliJ IDEA
-2. Код от предыдущего программиста
-
-public class Main {
-  public static void main(String[] args) {
-    // TODO: подставлять номер карты нужно сюда между двойными кавычками, без пробелов
-    String number = "5351719427810741";
-    System.out.println(String.format("Result is %s", isValidCardNumber(number) ? "OK" : "FAIL"));
-  }
-
-  public static boolean isValidCardNumber(String number) {
-    if (number == null) {
-      return false;
-    }
-
-    if (number.length() != 16) {
-      return false;
-    }
-
-    long result = 0;
-    for (int i = 0; i < number.length(); i++) {
-      int digit;
-      try {
-        digit = Integer.parseInt(number.charAt(i) + "");
-      } catch (NumberFormatException e) {
-        return false;
-      }
-
-      if (i % 2 == 0) {
-        digit *= 2;
-        if (digit > 9) {
-          digit -= 9;
-        }
-      }
-      result += digit;
-    }
-
-    return (result != 0) && (result % 10 == 0);
-  }
-}
+2. Код от предыдущего программиста по [ссылке](https://github.com/netology-code/javaqa-homeworks/tree/master/intro)
 
 **В результате тестирования выявлены следующие дефекты:**
-Программа считает валидными только 16-ти значные номера банковских карт
+ * Программа считает валидными только 16-ти значные номера банковских карт
 
 ## Описание процесса тестирования
 1. Установить IntelliJ IDEA согласно [Руководство по установке IntelliJ IDEA](https://github.com/netology-code/javaqa-homeworks/blob/master/intro/idea.md)
@@ -66,12 +28,12 @@ public class Main {
 Сервис генерирует валидные номера карт.
 
 ## Ожидаемый результат:
- *Тестовые данные валидные
- *Сообщение "Result is OK"
+ * Тестовые данные валидные
+ * Сообщение "Result is OK"
 
 ## Фактический результат:
-Программа считает валидными номера карт с длинной 16 цифр. Сообщение "Result is OK"
-Номера карт с длинной 14, 15, 19 цифр программа считает невалидными. Сообщение "Result is FAIL"
+ * Программа считает валидными номера карт с длинной 16 цифр. Сообщение "Result is OK"
+ * Номера карт с длинной 14, 15, 19 цифр программа считает невалидными. Сообщение "Result is FAIL"
 
 
 **Тестирование производилось в следующем окружении:**
